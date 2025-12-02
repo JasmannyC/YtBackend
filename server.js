@@ -34,7 +34,7 @@ app.post('/extract-link', async (req, res) => {
 
     } catch (error) {
         console.error('Error de ytdl-core:', error.message);
-        res.status(500).json({ error: Fallo en la extracción: ${error.message} });
+        res.status(500).json({ error: `Fallo en la extracción: ${error.message} });
     }
 });
 
